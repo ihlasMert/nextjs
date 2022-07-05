@@ -1,10 +1,14 @@
 //our-domain.com/news/something-important
+import { useRouter } from "next/router";
 
+function DetailPage() {
+  const router = useRouter();
+  const newsId = router.query.newsId;
 
+  //send request to the back-end API
+  //to fetch the news item with newsId
 
-function DetailPage(){
+  return <h1> The Detail Page </h1>;
+}
 
-    return <h1> The Detail Page </h1>
-  }
-  
-  export default DetailPage
+export default DetailPage;
